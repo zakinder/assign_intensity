@@ -10,17 +10,45 @@ Copyright (C) 1986-2016 Xilinx, Inc. All Rights Reserved.
 @I [HLS-10] Setting target device to 'xc7z045ffg900-2'
 @I [HLS-10] Analyzing design file 'assign_intensity/src/assign_intensity.cpp' ... 
 @E [HLS-70] Compilation errors found:
-assign_intensity/src/assign_intensity.cpp:117:6: error: variable has incomplete type 'void'
+assign_intensity/src/assign_intensity.cpp:195:28: error: typedef redefinition with different types ('unsigned long long' vs 'ap_uint<48>')
+typedef unsigned long long FixedType48;
+                           ^
+assign_intensity/src/assign_intensity.cpp:45:21: note: previous definition is here
+typedef ap_uint<48> FixedType48;
+                    ^
+assign_intensity/src/assign_intensity.cpp:203:13: error: redefinition of 'cumsum_reciprocal'
+FixedType48 cumsum_reciprocal(FixedType48 cumsum)
+            ^
+assign_intensity/src/assign_intensity.cpp:52:13: note: previous definition is here
+FixedType48 cumsum_reciprocal(FixedType48 cumsum)
+            ^
+assign_intensity/src/assign_intensity.cpp:231:5: error: redefinition of 'assign_intensity'
+int assign_intensity(
+    ^
+assign_intensity/src/assign_intensity.cpp:80:5: note: previous definition is here
+int assign_intensity(
+    ^
+assign_intensity/src/assign_intensity.cpp:282:6: error: variable has incomplete type 'void'
 void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
      ^
-assign_intensity/src/assign_intensity.cpp:117:22: error: use of undeclared identifier 'uint'
+assign_intensity/src/assign_intensity.cpp:282:22: error: use of undeclared identifier 'uint'; did you mean 'rint'?
 void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
-                     ^
-assign_intensity/src/assign_intensity.cpp:117:53: error: expected ';' after top level declarator
+                     ^~~~
+                     rint
+C:/Xilinx/Vivado_HLS/2016.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\math.h:648:23: note: 'rint' declared here
+extern double __cdecl rint (double);
+                      ^
+assign_intensity/src/assign_intensity.cpp:282:27: error: expected ')'
+void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
+                          ^
+assign_intensity/src/assign_intensity.cpp:282:21: note: to match this '('
+void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
+                    ^
+assign_intensity/src/assign_intensity.cpp:282:53: error: expected ';' after top level declarator
 void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
                                                     ^
                                                     ;
-3 errors generated.
+7 errors generated.
 Failed checking during preprocessing.
     while executing
 "source C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev0/csynth.tcl"

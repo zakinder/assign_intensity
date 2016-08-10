@@ -21,6 +21,12 @@
  *pj_r_0001\assign_intensity\m_rpt
  *---------------------------------------------------
  *rev0 : init - source from Ashwin K. Balasubramanian
+ *rev1 : updated typo errors.
+		 added clk fre 150Mhz .
+		 updated the part number xc7z045ffg900-2
+		 set_clock_uncertainty 0.63
+		 set synth lang from verilog to vhdl
+
  *---------------------------------------------------
  */
 #include <cstdlib>
@@ -28,7 +34,7 @@
 #include <cstdio>
 #include <cassert>
 #include <cstring> // for memset
-
+#include "ap_int.h"
 #define BASE_SIZE 4
 #define FIXED48_SHIFT 20 // fixed point shift (i.e. 20 bit for decimal)
 #define MAX_CUMSUM 256 // 4x4 blocks, each with 16 subpixels; 16 * 16 = 256
@@ -37,10 +43,9 @@ typedef unsigned int uint_lut_t;
 typedef unsigned short int pixel_value_t;
 typedef unsigned int nodemap_accum_t;
 typedef unsigned int nodemap_count_t;
-typedef unsigned long long FixedType48;
+typedef ap_uint<48> FixedType48;
 
 using namespace std;
-
 /**
  * Compute the reciprocal of the cumulative sum using fixed point math.
  * The function assumes that cumsum is a positive number between 0 and MAX_CUMSUM
@@ -91,8 +96,11 @@ int assign_intensity(
     cumsum += (FixedType48)(alphabuf[3][0] + alphabuf[3][1] + alphabuf[3][2] + alphabuf[3][3]);
     FixedType48 csumrec = cumsum_reciprocal(cumsum);
     FixedType48 fix_intensity = ((FixedType48)intensity) << FIXED48_SHIFT;
-    for (int i = 0; i < BASE_SIZE; i++) {
-        for (int j = 0; j < BASE_SIZE; j++) {
+    assign_intensity_label4:for (int i = 0; i < BASE_SIZE; i++)
+
+
+    {
+        assign_intensity_label1:for (int j = 0; j < BASE_SIZE; j++) {
             // use fixed point math to normalize alpha value
             //FixedType48 alpha_norm = ((FixedType48)alphabuf[i][j] << FIXED48_SHIFT) / cumsum; // !DIV
             FixedType48 alpha_norm = ((FixedType48)alphabuf[i][j] * csumrec);
@@ -124,12 +132,12 @@ node_count =
    0.03    0.06    0.06    0.03
 */
 
-void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
+void print_buffer_fp(uint_lut_t buf[BASE_SIZE][BASE_SIZE])
 {
 	int i,j;
 	const float fix_factor = 1048576.0f; // 2^20
-    for (i = 0; i < BASE_SIZE; i++) {
-        for (j = 0; j < BASE_SIZE; j++) {
+    print_buffer_fp_label2:for (i = 0; i < BASE_SIZE; i++) {
+        print_buffer_fp_label3:for (j = 0; j < BASE_SIZE; j++) {
         	printf("%7.2f ", (float)(buf[i][j]) / fix_factor);
         }
         printf("\n");
@@ -137,7 +145,7 @@ void print_buffer_fp(uint buf[BASE_SIZE][BASE_SIZE])
 }
 
 
-int main(int argc, char* argv[])
+int init()
 {
     // prepare input
     const uint_lut_t alphabuf[BASE_SIZE][BASE_SIZE] = {
@@ -169,3 +177,4 @@ int main(int argc, char* argv[])
     print_buffer_fp(node_count);
     return 0;
 }
+

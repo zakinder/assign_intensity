@@ -13,5 +13,5 @@ set_clock_uncertainty 0.63
 #source "./assign_intensity/rev0/directives.tcl"
 #csim_design
 csynth_design
-#cosim_design
+#cosim_design -rtl vhdl -tool xsim
 export_design -format ip_catalog

@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vivado HLS Report for 'assign_intensity'
+================================================================
+* Date:           Tue Aug 09 23:34:14 2016
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        assign_intensity
+* Solution:       rev1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.67|      5.54|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  260|  294|  261|  295|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |          Loop Name         | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- assign_intensity_label4   |  248|  248|        62|          -|          -|     4|    no    |
+        | + assign_intensity_label1  |   60|   60|        15|          -|          -|     4|    no    |
+        +----------------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|     739|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|     17|    1550|    2285|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|     178|
+|Register         |        -|      -|     723|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|     17|    2273|    3202|
++-----------------+---------+-------+--------+--------+
+|Available        |     1090|    900|  437200|  218600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      1|   ~0   |       1|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+-----------------------------------------------+---------+-------+-----+-----+
+    |                     Instance                     |                     Module                    | BRAM_18K| DSP48E|  FF | LUT |
+    +--------------------------------------------------+-----------------------------------------------+---------+-------+-----+-----+
+    |assign_intensity_fadd_32ns_32ns_32_7_full_dsp_U0  |assign_intensity_fadd_32ns_32ns_32_7_full_dsp  |        0|      2|  306|  416|
+    |assign_intensity_fdiv_32ns_32ns_32_16_U2          |assign_intensity_fdiv_32ns_32ns_32_16          |        0|      0|  761|  989|
+    |assign_intensity_fmul_32ns_32ns_32_4_max_dsp_U1   |assign_intensity_fmul_32ns_32ns_32_4_max_dsp   |        0|      3|  143|  322|
+    |assign_intensity_mul_36ns_48ns_52_6_U5            |assign_intensity_mul_36ns_48ns_52_6            |        0|      6|    0|    0|
+    |assign_intensity_mul_48s_32ns_48_6_U4             |assign_intensity_mul_48s_32ns_48_6             |        0|      6|    0|    0|
+    |assign_intensity_uitofp_64ns_32_6_U3              |assign_intensity_uitofp_64ns_32_6              |        0|      0|  340|  558|
+    +--------------------------------------------------+-----------------------------------------------+---------+-------+-----+-----+
+    |Total                                             |                                               |        0|     17| 1550| 2285|
+    +--------------------------------------------------+-----------------------------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+-----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+-----+------------+------------+
+    |cumsum_V_fu_417_p2     |     +    |      0|  0|   34|          34|          34|
+    |grp_fu_355_p2          |     +    |      0|  0|   32|          32|          32|
+    |grp_fu_373_p2          |     +    |      0|  0|   16|          32|          32|
+    |grp_fu_379_p2          |     +    |      0|  0|   16|          32|          32|
+    |i_1_fu_565_p2          |     +    |      0|  0|    3|           3|           1|
+    |j_1_fu_589_p2          |     +    |      0|  0|    3|           3|           1|
+    |node_count_d0          |     +    |      0|  0|   32|          32|          32|
+    |node_output_d0         |     +    |      0|  0|   32|          32|          32|
+    |sh_assign_fu_454_p2    |     +    |      0|  0|    9|           8|           9|
+    |tmp9_fu_405_p2         |     +    |      0|  0|   33|          33|          33|
+    |tmp_4_fu_599_p2        |     +    |      0|  0|    6|           6|           6|
+    |tmp_fu_392_p2          |     +    |      0|  0|   33|          33|          33|
+    |tmp_4_i_i_i_fu_468_p2  |     -    |      0|  0|    8|           7|           8|
+    |exitcond1_fu_559_p2    |   icmp   |      0|  0|    2|           3|           4|
+    |exitcond_fu_583_p2     |   icmp   |      0|  0|    2|           3|           4|
+    |tmp_i_fu_423_p2        |   icmp   |      0|  0|   12|          34|           1|
+    |tmp_7_i_i_i_fu_506_p2  |   lshr   |      0|  0|   63|          24|          24|
+    |sh_assign_1_fu_477_p3  |  select  |      0|  0|    9|           1|           9|
+    |tmp_s_fu_540_p3        |  select  |      0|  0|   48|           1|          48|
+    |tmp_9_i_i_i_fu_512_p2  |    shl   |      0|  0|  346|         110|         110|
+    +-----------------------+----------+-------+---+-----+------------+------------+
+    |Total                  |          |      0|  0|  739|         463|         485|
+    +-----------------------+----------+-------+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+-----+-----------+-----+-----------+
+    |        Name       | LUT | Input Size| Bits| Total Bits|
+    +-------------------+-----+-----------+-----+-----------+
+    |alphabuf_address0  |    8|         10|    4|         40|
+    |alphabuf_address1  |    8|          9|    4|         36|
+    |ap_NS_fsm          |  108|         63|    1|         63|
+    |i_reg_315          |    3|          2|    3|          6|
+    |j_reg_326          |    3|          2|    3|          6|
+    |rec_V_reg_303      |   48|          2|   48|         96|
+    +-------------------+-----+-----------+-----+-----------+
+    |Total              |  178|         88|   63|        247|
+    +-------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |alpha_norm_V_reg_855      |  48|   0|   48|          0|
+    |ap_CS_fsm                 |  62|   0|   62|          0|
+    |cumsum_V_reg_758          |  34|   0|   34|          0|
+    |i_1_reg_817               |   3|   0|    3|          0|
+    |i_reg_315                 |   3|   0|    3|          0|
+    |isNeg_reg_798             |   1|   0|    1|          0|
+    |j_1_reg_830               |   3|   0|    3|          0|
+    |j_reg_326                 |   3|   0|    3|          0|
+    |loc_V_1_reg_793           |  23|   0|   23|          0|
+    |loc_V_reg_787             |   8|   0|    8|          0|
+    |node_count_addr_reg_845   |   4|   0|    4|          0|
+    |node_count_load_reg_865   |  32|   0|   32|          0|
+    |node_output_addr_reg_840  |   4|   0|    4|          0|
+    |node_output_load_reg_880  |  32|   0|   32|          0|
+    |phitmp_reg_875            |  32|   0|   32|          0|
+    |rec_V_reg_303             |  48|   0|   48|          0|
+    |reg_361                   |  32|   0|   32|          0|
+    |reg_365                   |  32|   0|   32|          0|
+    |reg_369                   |  32|   0|   32|          0|
+    |rhs_V_cast_reg_809        |  16|   0|   52|         36|
+    |sh_assign_1_reg_803       |   9|   0|    9|          0|
+    |tmp9_reg_748              |  33|   0|   33|          0|
+    |tmp_10_reg_860            |  32|   0|   32|          0|
+    |tmp_12_cast_reg_822       |   3|   0|    6|          3|
+    |tmp_1_i_reg_772           |  32|   0|   32|          0|
+    |tmp_2_i_reg_777           |  32|   0|   32|          0|
+    |tmp_3_i_reg_782           |  32|   0|   32|          0|
+    |tmp_i_reg_763             |   1|   0|    1|          0|
+    |tmp_reg_743               |  33|   0|   33|          0|
+    |val_assign_1_reg_718      |  32|   0|   32|          0|
+    |val_assign_reg_693        |  32|   0|   32|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 723|   0|  762|         39|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++----------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_start              |  in |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_done               | out |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_idle               | out |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_ready              | out |    1| ap_ctrl_hs | assign_intensity | return value |
+|ap_return             | out |   32| ap_ctrl_hs | assign_intensity | return value |
+|alphabuf_address0     | out |    4|  ap_memory |     alphabuf     |     array    |
+|alphabuf_ce0          | out |    1|  ap_memory |     alphabuf     |     array    |
+|alphabuf_q0           |  in |   32|  ap_memory |     alphabuf     |     array    |
+|alphabuf_address1     | out |    4|  ap_memory |     alphabuf     |     array    |
+|alphabuf_ce1          | out |    1|  ap_memory |     alphabuf     |     array    |
+|alphabuf_q1           |  in |   32|  ap_memory |     alphabuf     |     array    |
+|intensity             |  in |   16|   ap_none  |     intensity    |    scalar    |
+|node_output_address0  | out |    4|  ap_memory |    node_output   |     array    |
+|node_output_ce0       | out |    1|  ap_memory |    node_output   |     array    |
+|node_output_we0       | out |    1|  ap_memory |    node_output   |     array    |
+|node_output_d0        | out |   32|  ap_memory |    node_output   |     array    |
+|node_output_q0        |  in |   32|  ap_memory |    node_output   |     array    |
+|node_count_address0   | out |    4|  ap_memory |    node_count    |     array    |
+|node_count_ce0        | out |    1|  ap_memory |    node_count    |     array    |
+|node_count_we0        | out |    1|  ap_memory |    node_count    |     array    |
+|node_count_d0         | out |   32|  ap_memory |    node_count    |     array    |
+|node_count_q0         |  in |   32|  ap_memory |    node_count    |     array    |
++----------------------+-----+-----+------------+------------------+--------------+
+
