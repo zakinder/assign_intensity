@@ -11,7 +11,7 @@ open_solution "rev1"
 set_part {xc7z045ffg900-2}
 create_clock -period 6.66667 -name default
 set_clock_uncertainty 0.63
-source "./assign_intensity/rev1/directives.tcl"
+#source "./assign_intensity/rev1/directives.tcl"
 csim_design -clean
 csynth_design
 cosim_design -rtl vhdl -tool xsim

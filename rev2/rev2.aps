@@ -2,6 +2,9 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
+    <clockList>
+        <clock default="false" name="default" period="6.66667" uncertainty="0.63"/>
+    </clockList>
     <config>
         <schedule model="assign_intensity"/>
         <config_array_partition auto_partition_threshold="4" auto_promotion_threshold="64" include_extern_globals="0" include_ports="0" scalarize_all="0" throughput_driven="1"/>
@@ -39,8 +42,8 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="vhdl">
-        <Format description="Assigns the pixel intensity to the nodemap area covered by the pixel" display_name="assign_intensity" formatName="ip_catalog" vendor="lynntech"/>
+    <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="verilog">
+        <Format description="Assigns the pixel intensity to the nodemap area covered by the pixel" display_name="assign_intensity" formatName="ip_catalog" vendor="lynntech" library="" version="1.0" driver_input_dir="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
@@ -66,8 +69,5 @@
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
         <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
     </libraryList>
-    <clockList>
-        <clock default="false" name="default" uncertainty="0.63" period="6.66667"/>
-    </clockList>
 </solution>
 

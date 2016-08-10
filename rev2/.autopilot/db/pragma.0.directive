@@ -1,6 +1,9 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
 <sourceFile name="">
 <directive functionLabel="" functionName="assign_intensity" label="">
+<pragma name="TOP"/>
+</directive>
+<directive functionLabel="" functionName="assign_intensity" label="">
 <pragma name="PIPELINE">
 <option name="II" value="1"/>
 <option name="rewind" positionalBoolean="1" value=""/>

@@ -11,7 +11,7 @@ open_solution "rev0"
 set_part {xc7z045ffg900-2} -tool vivado
 create_clock -period 6.66667 -name default
 set_clock_uncertainty 0.63
-source "./assign_intensity/rev0/directives.tcl"
+#source "./assign_intensity/rev0/directives.tcl"
 csim_design -clean
 csynth_design
 cosim_design -rtl vhdl -tool xsim

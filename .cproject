@@ -25,7 +25,6 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1735382352" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1311194420" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.962007669" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="C:/Users/sakin/Desktop/pj_r_0001"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/etc"/>
@@ -43,7 +42,6 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.1572846165" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1169544740" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1122786455" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="C:/Users/sakin/Desktop/pj_r_0001"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/etc"/>
@@ -112,7 +110,6 @@
 								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.2016155617" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.41336491" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1566751328" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="C:/Users/sakin/Desktop/pj_r_0001"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/etc"/>
@@ -125,7 +122,6 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.1908091245" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.539782084" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1017710916" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="C:/Users/sakin/Desktop/pj_r_0001"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2016.2/include/etc"/>

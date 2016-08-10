@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="assign_intensity" name="assign_intensity">
+<project xmlns="com.autoesl.autopilot.project" name="assign_intensity" top="assign_intensity">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

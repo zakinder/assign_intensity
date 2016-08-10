@@ -33792,6 +33792,7 @@ FixedType48 cumsum_reciprocal(FixedType48 cumsum)
     else {
         // the following rounding method assumes that cumsum is positive and
         // that integer conversion implies truncation
+#pragma empty_line
         rec = (FixedType48)((1.0f / cumsum) * fix_mult + 0.5f);
     }
     return rec;
@@ -33813,8 +33814,9 @@ int assign_intensity(
     nodemap_accum_t node_output[4][4],
     nodemap_count_t node_count[4][4])
 {_ssdm_SpecArrayDimSize(node_count,4);_ssdm_SpecArrayDimSize(alphabuf,4);_ssdm_SpecArrayDimSize(node_output,4);
+#pragma HLS TOP
 #pragma empty_line
-    // Special Fixed point format used only in this function: 44.20
+ // Special Fixed point format used only in this function: 44.20
     // This fixed point format is used for the intermediate calculations
     // so that the fractional portion of the nodemap is calculated correctly.
     //const unsigned int FIXED48_SHIFT  =  20; // 44.20 fixed point format
@@ -33892,7 +33894,7 @@ int init()
         {4, 8, 8, 4}
     };
 _ssdm_SpecConstant(alphabuf);
-#pragma line 164 "assign_intensity/src/assign_intensity.cpp"
+#pragma line 166 "assign_intensity/src/assign_intensity.cpp"
 
     pixel_value_t intensity = 2048;
     nodemap_accum_t node_output[4][4];
