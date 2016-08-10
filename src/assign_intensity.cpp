@@ -26,7 +26,7 @@
 		 updated the part number xc7z045ffg900-2
 		 set_clock_uncertainty 0.63
 		 set synth lang from verilog to vhdl
-
+ *rev2 : added ip repo and testbench folder
  *---------------------------------------------------
  */
 #include <cstdlib>
@@ -63,6 +63,8 @@ FixedType48 cumsum_reciprocal(FixedType48 cumsum)
     else {
         // the following rounding method assumes that cumsum is positive and
         // that integer conversion implies truncation
+#pragma HLS PIPELINE II=1 rewind
+#pragma HLS UNROLL
         rec = (FixedType48)((1.0f / cumsum) * fix_mult + 0.5f);
     }
     return rec;
@@ -84,11 +86,13 @@ int assign_intensity(
     nodemap_accum_t  node_output[BASE_SIZE][BASE_SIZE],
     nodemap_count_t  node_count[BASE_SIZE][BASE_SIZE])
 {
+
     // Special Fixed point format used only in this function: 44.20
     // This fixed point format is used for the intermediate calculations
     // so that the fractional portion of the nodemap is calculated correctly.
     //const unsigned int FIXED48_SHIFT  =  20; // 44.20 fixed point format
     FixedType48 cumsum;
+
     // sum all values (unrolled version)
     cumsum =  (FixedType48)(alphabuf[0][0] + alphabuf[0][1] + alphabuf[0][2] + alphabuf[0][3]);
     cumsum += (FixedType48)(alphabuf[1][0] + alphabuf[1][1] + alphabuf[1][2] + alphabuf[1][3]);
@@ -100,7 +104,10 @@ int assign_intensity(
 
 
     {
+#pragma HLS PIPELINE II=1 rewind
+#pragma HLS UNROLL
         assign_intensity_label1:for (int j = 0; j < BASE_SIZE; j++) {
+#pragma HLS PIPELINE II=1 rewind
             // use fixed point math to normalize alpha value
             //FixedType48 alpha_norm = ((FixedType48)alphabuf[i][j] << FIXED48_SHIFT) / cumsum; // !DIV
             FixedType48 alpha_norm = ((FixedType48)alphabuf[i][j] * csumrec);
@@ -136,6 +143,8 @@ void print_buffer_fp(uint_lut_t buf[BASE_SIZE][BASE_SIZE])
 {
 	int i,j;
 	const float fix_factor = 1048576.0f; // 2^20
+#pragma HLS PIPELINE II=1 rewind
+#pragma HLS UNROLL
     print_buffer_fp_label2:for (i = 0; i < BASE_SIZE; i++) {
         print_buffer_fp_label3:for (j = 0; j < BASE_SIZE; j++) {
         	printf("%7.2f ", (float)(buf[i][j]) / fix_factor);
@@ -147,6 +156,7 @@ void print_buffer_fp(uint_lut_t buf[BASE_SIZE][BASE_SIZE])
 
 int init()
 {
+#pragma HLS PIPELINE
     // prepare input
     const uint_lut_t alphabuf[BASE_SIZE][BASE_SIZE] = {
         {4,  8,  8, 4},

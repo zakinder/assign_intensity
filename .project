@@ -47,9 +47,19 @@
 			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev1/.tcls</location>
 		</link>
 		<link>
+			<name>rev2/constraints</name>
+			<type>2</type>
+			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/.tcls</location>
+		</link>
+		<link>
 			<name>source/assign_intensity.cpp</name>
 			<type>1</type>
 			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/src/assign_intensity.cpp</location>
+		</link>
+		<link>
+			<name>testbench/assign_intensity_tb.cpp</name>
+			<type>1</type>
+			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/testbench/assign_intensity_tb.cpp</location>
 		</link>
 		<link>
 			<name>rev0/constraints/.xml.directive</name>
@@ -80,6 +90,21 @@
 			<name>rev1/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev1/script.tcl</location>
+		</link>
+		<link>
+			<name>rev2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/rev2.directive</location>
+		</link>
+		<link>
+			<name>rev2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/directives.tcl</location>
+		</link>
+		<link>
+			<name>rev2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,0 +1,73 @@
+<solution AutoPilot="com.autoesl.autopilot.solution">
+    <downStreamTool>
+        <DownStreamTool name=""/>
+    </downStreamTool>
+    <config>
+        <schedule model="assign_intensity"/>
+        <config_array_partition auto_partition_threshold="4" auto_promotion_threshold="64" include_extern_globals="0" include_ports="0" scalarize_all="0" throughput_driven="1"/>
+        <config_compile name_max_length="30" no_signed_zeros="0" pipeline_loops="0" unsafe_math_optimizations="0"/>
+    </config>
+    <UIConfigurations>
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="true" showDetailDesignViewer="false">
+            <Platform>xilinx/zynq/zynq</Platform>
+            <Platform>xilinx/zynq/zynq_fpv6</Platform>
+            <customLibs/>
+        </UIAutosynConf>
+        <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
+            <RTLs>
+                <Verilog method="IPXACT" selection="true"/>
+                <Vhdl method="IPXACT" selection="false"/>
+            </RTLs>
+        </UIIPPackagerConf>
+        <UIAutoMGConf AskAgain="true" Export="false" Xil_CoreGen="false" defaultCustomPorts="false">
+            <UIAutoMGImpl add_io_buffers="false" op_effort="high" op_goal="speed" par_effort="high" register_balancing="no" register_duplication="false" register_retiming="off" setup="0" synplify_io_insertion="true" synplify_op_effort="high" synplify_pipelining="false" synplify_resource_sharing="true" synplify_retiming="false" synplify_verilogPar="false" synplify_vhdlPar="false" synthesis_combo_logic="off" synthesis_effort="normal" virtual_pins="off" xilinxInterconnectType="plb">
+                <RTLs>
+                    <Verilog selection="true" tool="ISE"/>
+                    <Vhdl selection="false" tool="ISE"/>
+                </RTLs>
+                <verilogSynplifySettings synplify_invocation_command="synplify_pro -licensetype synplifypro_xilinx" synplify_io_insertion="false" synplify_op_effort="high" synplify_par="true" synplify_pipelining="true" synplify_resource_sharing="true" synplify_retiming="false"/>
+                <vhdlSynplifySettings synplify_invocation_command="synplify_pro -licensetype synplifypro_xilinx" synplify_io_insertion="false" synplify_op_effort="high" synplify_par="true" synplify_pipelining="true" synplify_resource_sharing="true" synplify_retiming="false"/>
+                <verilogISESettings add_io_buffers="false" op_effort="high" op_goal="speed" par_effort="high" register_balancing="no" register_duplication="false"/>
+                <vhdlISESettings add_io_buffers="false" op_effort="high" op_goal="speed" par_effort="high" register_balancing="no" register_duplication="false"/>
+            </UIAutoMGImpl>
+        </UIAutoMGConf>
+        <UIAutoSimConf ApIntSupport="false" AskAgain="true">
+            <RTLs>
+                <SystemC selection="true" tool="Auto"/>
+                <Verilog selection="false" tool="Auto"/>
+                <VHDL selection="false" tool="Auto"/>
+            </RTLs>
+        </UIAutoSimConf>
+    </UIConfigurations>
+    <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="vhdl">
+        <Format description="Assigns the pixel intensity to the nodemap area covered by the pixel" display_name="assign_intensity" formatName="ip_catalog" vendor="lynntech"/>
+        <Format formatName="sysgen"/>
+        <Format formatName="sysgen_ise"/>
+        <Format formatName="syn_dcp"/>
+        <Format formatName="pcore" use_netlist="none"/>
+    </ExportDesign>
+    <Simulation>
+        <SimFlow askAgain="true" compiledLibrary="C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/csim" dumpTrace="none" name="cosim" optimizeCompile="true" reduce_diskspace="false" setup="true" toolName="XSim">
+            <Rtl active="false" name="systemc"/>
+            <Rtl active="false" name="verilog"/>
+            <Rtl active="true" name="vhdl"/>
+        </SimFlow>
+    </Simulation>
+    <name>
+        <value string="rev2"/>
+    </name>
+    <project>
+        <value string="assign_intensity"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7z045:ffg900:-2"/>
+    </targetInfo>
+    <libraryList>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" uncertainty="0.63" period="6.66667"/>
+    </clockList>
+</solution>
+

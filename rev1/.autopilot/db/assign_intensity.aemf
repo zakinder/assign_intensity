@@ -1,0 +1,1828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1470800054678">
+  <ports id="1" name="alphabuf" type="PortType" originalName="alphabuf" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="intensity" type="PortType" originalName="intensity" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="node_output" type="PortType" originalName="node_output" coreName="RAM" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="16">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="4" name="node_count" type="PortType" originalName="node_count" coreName="RAM" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="16">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="14" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="147" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="216" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="218" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="220" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="221" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="228" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="229" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="230" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="231" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="238" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="239" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="240" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="241" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="242" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="243" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="249" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="250" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="251" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="253" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="254" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="264" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="267" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="269" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="274" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="275" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="278" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="311" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="333" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.10"/>
+  <edges id="334" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="335" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="345" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="349" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="351" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="354" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="357" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="369" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="371" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="373" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="375" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="376" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="377" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="393" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="397" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="399" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="412" source_obj="//@blocks.6/@node_objs.7" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="414" source_obj="//@blocks.6/@node_objs.8" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="416" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.10"/>
+  <edges id="417" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="458" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="459" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="460" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="461" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="462" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.8"/>
+  <edges id="463" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="464" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="465" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="466" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="467" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5"/>
+  <edges id="468" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3"/>
+  <edges source_obj="//@blocks.8/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@ports.2" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="-1" source_obj="//@ports.2" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="-1" source_obj="//@ports.3" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="-1" source_obj="//@ports.3" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.6" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.7" sink_obj="//@ports.2"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.9" sink_obj="//@ports.2"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@ports.3"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@ports.3"/>
+  <blocks id="67" name="_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>cumsum_reciprocal.exit</controlOutputObjs>
+    <controlOutputObjs>_ifconv</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="intensity_read" originalName="intensity" bitwidth="16" opcode="read" nodeLabel="10">
+      <dataInputObjs>intensity</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="alphabuf_load" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="alphabuf_load_1" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="alphabuf_load_2" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="alphabuf_load_3" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp1" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_373_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp2" lineNumber="93" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_355_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="2">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="val_assign" lineNumber="93" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_379_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="93" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="alphabuf_load_4" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="2" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="alphabuf_load_5" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="2" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="alphabuf_load_6" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="3" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="alphabuf_load_7" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="3" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="tmp3" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_373_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="5">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp4" lineNumber="94" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_355_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="4">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="val_assign_1" lineNumber="94" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_379_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="5">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="94" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="alphabuf_load_8" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="4" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="alphabuf_load_9" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="4" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="alphabuf_load_10" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="5" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="alphabuf_load_11" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="5" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="tmp5" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_373_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="7">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="tmp6" lineNumber="95" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_355_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="6">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="val_assign_2" lineNumber="95" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_379_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="7">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="95" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="alphabuf_load_12" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="6" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="alphabuf_load_13" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="6" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="alphabuf_load_14" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="7" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="alphabuf_load_15" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="7" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp7" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_373_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="9">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="tmp8" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_355_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="8">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="val_assign_3" lineNumber="96" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="grp_fu_379_p2" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="9">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="tmp" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="tmp_fu_392_p2" contextFuncName="assign_intensity" bitwidth="33" opcode="add" nodeLabel="7">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp9" lineNumber="96" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="tmp9_fu_405_p2" contextFuncName="assign_intensity" bitwidth="33" opcode="add" nodeLabel="9">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="cumsum_V" lineNumber="96" originalName="cumsum.V" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="cumsum_V_fu_417_p2" contextFuncName="assign_intensity" bitwidth="34" opcode="add" nodeLabel="10">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="96" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>uitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_i" lineNumber="59" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="tmp_i_fu_423_p2" contextFuncName="cumsum_reciprocal" bitwidth="1" opcode="icmp" nodeLabel="10">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="59" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="node_66" lineNumber="59" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="cumsum_reciprocal" opcode="br" nodeLabel="10">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="59" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <controlInputObjs>cumsum_reciprocal.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>93</validLinenumbers>
+      <validLinenumbers>94</validLinenumbers>
+      <validLinenumbers>95</validLinenumbers>
+      <validLinenumbers>96</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>97</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="94" name="_ifconv" type="BlockType">
+    <controlInputObjs>_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>cumsum_reciprocal.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="tmp_1_i" lineNumber="66" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_uitofp_64ns_32_6_U3" contextFuncName="cumsum_reciprocal" bitwidth="32" opcode="uitofp" nodeLabel="11" nodeLatency="5">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="tmp_2_i" lineNumber="66" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_fdiv_32ns_32ns_32_16_U2" contextFuncName="cumsum_reciprocal" bitwidth="32" opcode="fdiv" nodeLabel="17" nodeLatency="15">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>uitofp</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="tmp_3_i" lineNumber="66" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_fmul_32ns_32ns_32_4_max_dsp_U1" contextFuncName="cumsum_reciprocal" bitwidth="32" opcode="fmul" nodeLabel="33" nodeLatency="3">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>fdiv</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="val_assign_7" lineNumber="66" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_fadd_32ns_32ns_32_7_full_dsp_U0" contextFuncName="cumsum_reciprocal" bitwidth="32" opcode="fadd" nodeLabel="37" nodeLatency="6">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="sh_assign" lineNumber="338" originalName="sh" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="sh_assign_fu_454_p2" contextFuncName="expv" bitwidth="9" opcode="add" nodeLabel="44">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h" linenumber="338" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="expv"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_4_i_i_i" lineNumber="395" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="tmp_4_i_i_i_fu_468_p2" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="8" opcode="sub" nodeLabel="44">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="sh_assign_1" lineNumber="395" originalName="sh" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="sh_assign_1_fu_477_p3" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="9" opcode="select" nodeLabel="44">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_7_i_i_i" lineNumber="395" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="tmp_7_i_i_i_fu_506_p2" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="24" opcode="lshr" nodeLabel="45">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="tmp_9_i_i_i" lineNumber="395" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="tmp_9_i_i_i_fu_512_p2" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="110" opcode="shl" nodeLabel="45">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_s" lineNumber="395" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" rtlName="tmp_s_fu_540_p3" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="48" opcode="select" nodeLabel="45">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="node_93" opcode="br" nodeLabel="45">
+      <controlInputObjs>cumsum_reciprocal.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>66</validLinenumbers>
+      <validLinenumbers>97</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h">
+      <validLinenumbers>395</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h">
+      <validLinenumbers>338</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h">
+      <validLinenumbers>256</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp">
+      <validLinenumbers>50</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="99" name="cumsum_reciprocal.exit" type="BlockType">
+    <controlInputObjs>_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+    <controlInputObjs>_ifconv</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_105</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="rec_V" lineNumber="395" originalName="rec.V" fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products" contextFuncName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;" bitwidth="48" opcode="phi" nodeLabel="45">
+      <inlineStackInfo fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h" linenumber="256" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="ap_uint"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="97" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="66" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="cumsum_reciprocal"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="395" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="cast_IEEE754&amp;lt;unsigned long long, float&amp;gt;"/>
+      <inlineStackInfo fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="50" fileDirectory="r:\builds\2016.2\continuous\2016_06_02_1577090\src\products" functionName="__hls_fptoui_float_i64"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <controlInputObjs>_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="node_98" lineNumber="99" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="45">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="99" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <controlInputObjs>block_105</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>99</validLinenumbers>
+      <validLinenumbers>97</validLinenumbers>
+      <validLinenumbers>66</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/hls/hls_round.h">
+      <validLinenumbers>395</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot\ap_int.h">
+      <validLinenumbers>256</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/builds/2016.2/continuous/2016_06_02_1577090/src/products/hls/hls_lib/src/lib_floatconversion.cpp">
+      <validLinenumbers>50</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="105" name="block_105" type="BlockType">
+    <controlInputObjs>cumsum_reciprocal.exit</controlInputObjs>
+    <controlInputObjs>block_142</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_144</controlOutputObjs>
+    <controlOutputObjs>block_111</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="i" originalName="i" bitwidth="3" opcode="phi" nodeLabel="46">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>cumsum_reciprocal.exit</controlInputObjs>
+      <controlInputObjs>block_142</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="exitcond1" lineNumber="99" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="exitcond1_fu_559_p2" contextFuncName="assign_intensity" bitwidth="1" opcode="icmp" nodeLabel="46">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="99" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="i_1" lineNumber="99" originalName="i" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="i_1_fu_565_p2" contextFuncName="assign_intensity" bitwidth="3" opcode="add" nodeLabel="46">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="99" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="node_104" lineNumber="99" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="46">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="99" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_111</controlInputObjs>
+      <controlInputObjs>block_144</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>99</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="111" name="block_111" type="BlockType">
+    <controlInputObjs>block_105</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_117</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="node_110" lineNumber="103" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="46">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="103" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <controlInputObjs>block_117</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="117" name="block_117" type="BlockType">
+    <controlInputObjs>block_111</controlInputObjs>
+    <controlInputObjs>_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_142</controlOutputObjs>
+    <controlOutputObjs>_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="j" originalName="j" bitwidth="3" opcode="phi" nodeLabel="47">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_111</controlInputObjs>
+      <controlInputObjs>_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="exitcond" lineNumber="103" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="exitcond_fu_583_p2" contextFuncName="assign_intensity" bitwidth="1" opcode="icmp" nodeLabel="47">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="103" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="j_1" lineNumber="103" originalName="j" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="j_1_fu_589_p2" contextFuncName="assign_intensity" bitwidth="3" opcode="add" nodeLabel="47">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="103" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="node_116" lineNumber="103" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="47">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="103" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit</controlInputObjs>
+      <controlInputObjs>block_142</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="139" name="_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit" type="BlockType">
+    <controlInputObjs>block_117</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_117</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="tmp_4" lineNumber="106" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="tmp_4_fu_599_p2" contextFuncName="assign_intensity" bitwidth="6" opcode="add" nodeLabel="47">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="106" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="alphabuf_load_16" lineNumber="106" originalName="val" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="47" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="106" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alphabuf</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="alpha_norm_V" lineNumber="106" originalName="alpha_norm.V" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_mul_48s_32ns_48_6_U4" contextFuncName="assign_intensity" bitwidth="48" opcode="mul" nodeLabel="49" nodeLatency="5">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="106" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="node_count_load" lineNumber="108" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="53" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="108" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>node_count</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>node_count</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="tmp_5" lineNumber="108" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="node_count_d0" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="55">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="108" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="node_131" lineNumber="108" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="store" nodeLabel="55">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="108" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>node_count</dataInputObjs>
+      <dataOutputObjs>node_count</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="r_V" lineNumber="110" originalName="r.V" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="assign_intensity_mul_36ns_48ns_52_6_U5" contextFuncName="assign_intensity" bitwidth="52" opcode="mul" nodeLabel="55" nodeLatency="5">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="110" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="node_output_load" lineNumber="110" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" bitwidth="32" opcode="load" nodeLabel="59" nodeLatency="1">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="110" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>node_output</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>node_output</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="tmp_7" lineNumber="110" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." rtlName="node_output_d0" contextFuncName="assign_intensity" bitwidth="32" opcode="add" nodeLabel="61">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="110" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="node_137" lineNumber="110" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="store" nodeLabel="61">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="110" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>node_output</dataInputObjs>
+      <dataOutputObjs>node_output</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="node_138" lineNumber="103" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="61">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="103" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <controlInputObjs>block_117</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>106</validLinenumbers>
+      <validLinenumbers>108</validLinenumbers>
+      <validLinenumbers>110</validLinenumbers>
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="142" name="block_142" type="BlockType">
+    <controlInputObjs>block_117</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_105</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="node_141" lineNumber="99" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="br" nodeLabel="47">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="99" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <controlInputObjs>block_105</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>99</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="144" name="block_144" type="BlockType">
+    <controlInputObjs>block_105</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="143" name="node_143" lineNumber="113" fileName="assign_intensity/src/assign_intensity.cpp" fileDirectory=".." contextFuncName="assign_intensity" opcode="ret" nodeLabel="46">
+      <inlineStackInfo fileName="assign_intensity/src/assign_intensity.cpp" linenumber="113" fileDirectory="C:\Users\sakin\Desktop\pj_r_0001" functionName="assign_intensity"/>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="assign_intensity/src/assign_intensity.cpp">
+      <validLinenumbers>113</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <ScheduleInfo time="42"/>
+  <ScheduleInfo time="43"/>
+  <ScheduleInfo time="44"/>
+  <ScheduleInfo time="45"/>
+  <ScheduleInfo time="46"/>
+  <ScheduleInfo time="47"/>
+  <ScheduleInfo time="48"/>
+  <ScheduleInfo time="49"/>
+  <ScheduleInfo time="50"/>
+  <ScheduleInfo time="51"/>
+  <ScheduleInfo time="52"/>
+  <ScheduleInfo time="53"/>
+  <ScheduleInfo time="54"/>
+  <ScheduleInfo time="55"/>
+  <ScheduleInfo time="56"/>
+  <ScheduleInfo time="57"/>
+  <ScheduleInfo time="58"/>
+  <ScheduleInfo time="59"/>
+  <ScheduleInfo time="60"/>
+  <ScheduleInfo time="61"/>
+  <regnodes realName="alphabuf_addr_9_reg_703">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_13_reg_728">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_3_reg_668">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="phitmp_reg_875">
+    <nodeIds>134</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_10_reg_708">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="node_output_load_reg_880">
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_830">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="node_count_addr_reg_845">
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_8_reg_698">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="rec_V_reg_303">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp9_reg_748">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_15_reg_738">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_reg_653">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_16_reg_835">
+    <nodeIds>122</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_817">
+    <nodeIds>103</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_i_reg_763">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_5_reg_678">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="val_assign_1_reg_718">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="cumsum_V_reg_758">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_326">
+    <nodeIds>112</nodeIds>
+  </regnodes>
+  <regnodes realName="isNeg_reg_798">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_365">
+    <nodeIds>29</nodeIds>
+    <nodeIds>37</nodeIds>
+    <nodeIds>45</nodeIds>
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="intensity_read_reg_753">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="node_count_load_reg_865">
+    <nodeIds>129</nodeIds>
+  </regnodes>
+  <regnodes realName="lhs_V_cast_reg_870">
+    <nodeIds>132</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_361">
+    <nodeIds>28</nodeIds>
+    <nodeIds>36</nodeIds>
+    <nodeIds>44</nodeIds>
+    <nodeIds>52</nodeIds>
+    <nodeIds>125</nodeIds>
+  </regnodes>
+  <regnodes realName="sh_assign_1_reg_803">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_6_reg_683">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_369">
+    <nodeIds>33</nodeIds>
+    <nodeIds>41</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_743">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_i_reg_777">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_12_reg_723">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_10_reg_860">
+    <nodeIds>128</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_315">
+    <nodeIds>100</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_3_reg_850">
+    <nodeIds>126</nodeIds>
+  </regnodes>
+  <regnodes realName="rhs_V_cast_reg_809">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="alpha_norm_V_reg_855">
+    <nodeIds>127</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_12_cast_reg_822">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_2_reg_663">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="node_output_addr_reg_840">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="loc_V_reg_787">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_i_reg_772">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_14_reg_733">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_4_reg_673">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_1_reg_658">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_i4_reg_767">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="loc_V_1_reg_793">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_7_reg_688">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="alphabuf_addr_11_reg_713">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_3_i_reg_782">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="val_assign_reg_693">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_4_fu_599">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_9_gep_fu_209">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loc_V_1_fu_447">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_589">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_13_gep_fu_245">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_1_fu_477">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_4_gep_fu_165">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_cast_fu_401">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_565">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_2_gep_fu_147">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cumsum_V_cast_fu_385">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lhs_V_cast_fu_630">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_i_i_i_fu_502">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_s_fu_433">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_i_i_i_fu_468">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_1_cast_cast_fu_499">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_355">
+    <nodeIds>33</nodeIds>
+    <nodeIds>41</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_526">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_16_gep_fu_273">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="node_count_addr_gep_fu_287">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_648">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cumsum_V_fu_417">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_13_cast_fu_604">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_fu_423">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_i4_fu_429">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_10_gep_fu_219">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_V_cast_fu_555">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_i_i_i_cast_fu_473">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rec_V_phi_fu_307">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_15_gep_fu_263">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_559">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_485">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_330">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp10_cast_fu_411">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp9_fu_405">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_i_i_cast_fu_451">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp11_cast_fu_414">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_i_i_i_fu_512">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_gep_fu_122">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_cast_fu_579">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_7_gep_fu_191">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_8_gep_fu_201">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_cast_fu_388">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_621">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_611">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_2_fu_548">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_392">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_571">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phitmp_fu_638">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_540">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_583">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_i_i_i_fu_506">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_379">
+    <nodeIds>34</nodeIds>
+    <nodeIds>42</nodeIds>
+    <nodeIds>50</nodeIds>
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_5_gep_fu_173">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_373">
+    <nodeIds>32</nodeIds>
+    <nodeIds>40</nodeIds>
+    <nodeIds>48</nodeIds>
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_12_gep_fu_237">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_6_gep_fu_183">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_fu_454">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_1_gep_fu_130">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="node_output_addr_gep_fu_280">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_625">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_cast_fu_595">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_i_i_i_fu_492">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_11_gep_fu_227">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_319">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_cast_fu_398">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_14_gep_fu_255">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_1_cast_fu_496">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_530">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loc_V_fu_437">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="isNeg_fu_460">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_518">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="alphabuf_addr_3_gep_fu_155">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_615">
+    <nodeIds>127</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_347">
+    <nodeIds>70</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_633">
+    <nodeIds>133</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_337">
+    <nodeIds>72</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_352">
+    <nodeIds>69</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_342">
+    <nodeIds>71</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="intensity_read_read_fu_116">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="alphabuf">
+    <nodeIds>28</nodeIds>
+    <nodeIds>30</nodeIds>
+    <nodeIds>36</nodeIds>
+    <nodeIds>38</nodeIds>
+    <nodeIds>44</nodeIds>
+    <nodeIds>46</nodeIds>
+    <nodeIds>52</nodeIds>
+    <nodeIds>54</nodeIds>
+    <nodeIds>125</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="alphabuf" portID="1">
+    <nodeIds>29</nodeIds>
+    <nodeIds>31</nodeIds>
+    <nodeIds>37</nodeIds>
+    <nodeIds>39</nodeIds>
+    <nodeIds>45</nodeIds>
+    <nodeIds>47</nodeIds>
+    <nodeIds>53</nodeIds>
+    <nodeIds>55</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="node_count">
+    <nodeIds>129</nodeIds>
+    <nodeIds>131</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="node_output">
+    <nodeIds>135</nodeIds>
+    <nodeIds>137</nodeIds>
+  </memoryPorts>
+  <ioPorts name="alphabuf(p0)">
+    <contents name="load">
+      <nodeIds>28</nodeIds>
+      <nodeIds>30</nodeIds>
+      <nodeIds>36</nodeIds>
+      <nodeIds>38</nodeIds>
+      <nodeIds>44</nodeIds>
+      <nodeIds>46</nodeIds>
+      <nodeIds>52</nodeIds>
+      <nodeIds>54</nodeIds>
+      <nodeIds>125</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="alphabuf(p1)">
+    <contents name="load">
+      <nodeIds>29</nodeIds>
+      <nodeIds>31</nodeIds>
+      <nodeIds>37</nodeIds>
+      <nodeIds>39</nodeIds>
+      <nodeIds>45</nodeIds>
+      <nodeIds>47</nodeIds>
+      <nodeIds>53</nodeIds>
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="intensity">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="node_count(p0)">
+    <contents name="load">
+      <nodeIds>129</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>131</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="node_output(p0)">
+    <contents name="load">
+      <nodeIds>135</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>137</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>143</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+      <operations id="29" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="29" stage="1" latency="2"/>
+      <operations id="30" stage="2" latency="2"/>
+      <operations id="31" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="2"/>
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="36" stage="2" latency="2"/>
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="2"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="38" stage="2" latency="2"/>
+      <operations id="39" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="2"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="45" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="45" stage="1" latency="2"/>
+      <operations id="46" stage="2" latency="2"/>
+      <operations id="47" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="2"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="52" stage="2" latency="2"/>
+      <operations id="53" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="2"/>
+      <operations id="53" stage="1" latency="2"/>
+      <operations id="54" stage="2" latency="2"/>
+      <operations id="55" stage="2" latency="2"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="54" stage="1" latency="2"/>
+      <operations id="55" stage="1" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="6" latency="6"/>
+    </states>
+    <states id="13">
+      <operations id="69" stage="5" latency="6"/>
+    </states>
+    <states id="14">
+      <operations id="69" stage="4" latency="6"/>
+    </states>
+    <states id="15">
+      <operations id="69" stage="3" latency="6"/>
+    </states>
+    <states id="16">
+      <operations id="69" stage="2" latency="6"/>
+    </states>
+    <states id="17">
+      <operations id="69" stage="1" latency="6"/>
+    </states>
+    <states id="18">
+      <operations id="70" stage="16" latency="16"/>
+    </states>
+    <states id="19">
+      <operations id="70" stage="15" latency="16"/>
+    </states>
+    <states id="20">
+      <operations id="70" stage="14" latency="16"/>
+    </states>
+    <states id="21">
+      <operations id="70" stage="13" latency="16"/>
+    </states>
+    <states id="22">
+      <operations id="70" stage="12" latency="16"/>
+    </states>
+    <states id="23">
+      <operations id="70" stage="11" latency="16"/>
+    </states>
+    <states id="24">
+      <operations id="70" stage="10" latency="16"/>
+    </states>
+    <states id="25">
+      <operations id="70" stage="9" latency="16"/>
+    </states>
+    <states id="26">
+      <operations id="70" stage="8" latency="16"/>
+    </states>
+    <states id="27">
+      <operations id="70" stage="7" latency="16"/>
+    </states>
+    <states id="28">
+      <operations id="70" stage="6" latency="16"/>
+    </states>
+    <states id="29">
+      <operations id="70" stage="5" latency="16"/>
+    </states>
+    <states id="30">
+      <operations id="70" stage="4" latency="16"/>
+    </states>
+    <states id="31">
+      <operations id="70" stage="3" latency="16"/>
+    </states>
+    <states id="32">
+      <operations id="70" stage="2" latency="16"/>
+    </states>
+    <states id="33">
+      <operations id="70" stage="1" latency="16"/>
+    </states>
+    <states id="34">
+      <operations id="71" stage="4" latency="4"/>
+    </states>
+    <states id="35">
+      <operations id="71" stage="3" latency="4"/>
+    </states>
+    <states id="36">
+      <operations id="71" stage="2" latency="4"/>
+    </states>
+    <states id="37">
+      <operations id="71" stage="1" latency="4"/>
+    </states>
+    <states id="38">
+      <operations id="72" stage="7" latency="7"/>
+    </states>
+    <states id="39">
+      <operations id="72" stage="6" latency="7"/>
+    </states>
+    <states id="40">
+      <operations id="72" stage="5" latency="7"/>
+    </states>
+    <states id="41">
+      <operations id="72" stage="4" latency="7"/>
+    </states>
+    <states id="42">
+      <operations id="72" stage="3" latency="7"/>
+    </states>
+    <states id="43">
+      <operations id="72" stage="2" latency="7"/>
+    </states>
+    <states id="44">
+      <operations id="72" stage="1" latency="7"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+    </states>
+    <states id="45">
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+    </states>
+    <states id="46">
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+    </states>
+    <states id="47">
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+    </states>
+    <states id="48">
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="2" latency="2"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+    </states>
+    <states id="49">
+      <operations id="125" stage="1" latency="2"/>
+    </states>
+    <states id="50">
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="6" latency="6"/>
+    </states>
+    <states id="51">
+      <operations id="127" stage="5" latency="6"/>
+    </states>
+    <states id="52">
+      <operations id="127" stage="4" latency="6"/>
+    </states>
+    <states id="53">
+      <operations id="127" stage="3" latency="6"/>
+    </states>
+    <states id="54">
+      <operations id="127" stage="2" latency="6"/>
+      <operations id="129" stage="2" latency="2"/>
+    </states>
+    <states id="55">
+      <operations id="127" stage="1" latency="6"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="2"/>
+    </states>
+    <states id="56">
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="6" latency="6"/>
+    </states>
+    <states id="57">
+      <operations id="133" stage="5" latency="6"/>
+    </states>
+    <states id="58">
+      <operations id="133" stage="4" latency="6"/>
+    </states>
+    <states id="59">
+      <operations id="133" stage="3" latency="6"/>
+    </states>
+    <states id="60">
+      <operations id="133" stage="2" latency="6"/>
+      <operations id="135" stage="2" latency="2"/>
+    </states>
+    <states id="61">
+      <operations id="133" stage="1" latency="6"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="2"/>
+    </states>
+    <states id="62">
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="74"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="75"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="76"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="77"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="78"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="79"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="80"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="81"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="82"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="83"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="85"/>
+    </transitions>
+    <transitions inState="11" outState="46">
+      <condition id="84"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="86"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="87"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="88"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="89"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="90"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="91"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="92"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="93"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="94"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="95"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="96"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="97"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="98"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="99"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="100"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="101"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="102"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="103"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="104"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="105"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="106"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="107"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="108"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="109"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="110"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="111"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="112"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="113"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="114"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="115"/>
+    </transitions>
+    <transitions inState="42" outState="43">
+      <condition id="116"/>
+    </transitions>
+    <transitions inState="43" outState="44">
+      <condition id="117"/>
+    </transitions>
+    <transitions inState="44" outState="45">
+      <condition id="118"/>
+    </transitions>
+    <transitions inState="45" outState="46">
+      <condition id="119"/>
+    </transitions>
+    <transitions inState="46" outState="47">
+      <condition id="121"/>
+    </transitions>
+    <transitions inState="47" outState="48">
+      <condition id="123"/>
+    </transitions>
+    <transitions inState="48" outState="49">
+      <condition id="124"/>
+    </transitions>
+    <transitions inState="49" outState="50">
+      <condition id="126"/>
+    </transitions>
+    <transitions inState="50" outState="51">
+      <condition id="127"/>
+    </transitions>
+    <transitions inState="51" outState="52">
+      <condition id="128"/>
+    </transitions>
+    <transitions inState="52" outState="53">
+      <condition id="129"/>
+    </transitions>
+    <transitions inState="53" outState="54">
+      <condition id="130"/>
+    </transitions>
+    <transitions inState="54" outState="55">
+      <condition id="131"/>
+    </transitions>
+    <transitions inState="55" outState="56">
+      <condition id="132"/>
+    </transitions>
+    <transitions inState="56" outState="57">
+      <condition id="133"/>
+    </transitions>
+    <transitions inState="57" outState="58">
+      <condition id="134"/>
+    </transitions>
+    <transitions inState="58" outState="59">
+      <condition id="135"/>
+    </transitions>
+    <transitions inState="59" outState="60">
+      <condition id="136"/>
+    </transitions>
+    <transitions inState="60" outState="61">
+      <condition id="137"/>
+    </transitions>
+    <transitions inState="61" outState="62">
+      <condition id="138"/>
+    </transitions>
+    <transitions inState="62" outState="48">
+      <condition id="140"/>
+    </transitions>
+    <transitions inState="48" outState="47">
+      <condition id="142"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="assign_intensity" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="294" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="45" mMaxLatency="-1">
+      <basicBlocks>67</basicBlocks>
+      <basicBlocks>94</basicBlocks>
+      <basicBlocks>99</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="assign_intensity_label4" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="248" mMaxLatency="-1" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>105</basicBlocks>
+      <basicBlocks>111</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="assign_intensity_label1" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="60" mMaxLatency="-1" mType="1">
+      <basicBlocks>117</basicBlocks>
+      <basicBlocks>139</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>142</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>144</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,14 @@
+   Compiling ../../../testbench/assign_intensity_tb.cpp in debug mode
+   Compiling ../../../src/assign_intensity.cpp in debug mode
+   Generating csim.exe
+node_output =
+  56.89  113.78  113.78   56.89 
+ 113.78  227.56  227.56  113.78 
+ 113.78  227.56  227.56  113.78 
+  56.89  113.78  113.78   56.89 
+node_count =
+   0.03    0.06    0.06    0.03 
+   0.06    0.11    0.11    0.06 
+   0.06    0.11    0.11    0.06 
+   0.03    0.06    0.06    0.03 
+INFO: [SIM 1] CSim done with 0 errors.
