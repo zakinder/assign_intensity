@@ -1,0 +1,22 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="rev0"/>
+    </name>
+    <project>
+        <value string="assign_intensity"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7z045:ffg900:-2"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+    </libraryList>
+    <downStreamTool>
+        <DownStreamTool name="vivado"/>
+    </downStreamTool>
+    <clockList>
+        <clock default="false" name="default" uncertainty="0.63" period="6.66667"/>
+    </clockList>
+</AutoPilot:solution>
+
