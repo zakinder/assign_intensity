@@ -2,8 +2,9 @@
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-w64-mingw32"
 
-@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a38]
+@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a23]
 @llvm_global_ctors_0 = appending global [2 x i32] [i32 65535, i32 65535]
+@assign_intensity_str = internal unnamed_addr constant [17 x i8] c"assign_intensity\00"
 @p_str4 = private unnamed_addr constant [24 x i8] c"assign_intensity_label1\00", align 1
 @p_str3 = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
 @p_str2 = private unnamed_addr constant [24 x i8] c"assign_intensity_label4\00", align 1
@@ -40,7 +41,7 @@ _ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:
   call void (...)* @_ssdm_op_SpecBitsMap([16 x i32]* %node_output) nounwind, !map !19
   call void (...)* @_ssdm_op_SpecBitsMap([16 x i32]* %node_count) nounwind, !map !23
   call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !27
-  call void (...)* @_ssdm_op_SpecTopModule() nounwind
+  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @assign_intensity_str) nounwind
   %alphabuf_load = load i32* %alphabuf_addr, align 4
   %alphabuf_load_1 = load i32* %alphabuf_addr_1, align 4
   %alphabuf_load_2 = load i32* %alphabuf_addr_2, align 4
@@ -246,7 +247,7 @@ _ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.3: ; preds = %2, %
   br i1 %exitcond_3, label %3, label %_ZrsILi96ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.3
 }
 
-define weak void @_ssdm_op_SpecTopModule(...) nounwind {
+define weak void @_ssdm_op_SpecTopModule(...) {
 entry:
   ret void
 }
@@ -373,7 +374,7 @@ entry:
 
 declare void @_ssdm_SpecLoopRewind(...) nounwind
 
-declare void @_GLOBAL__I_a38() nounwind
+declare void @_GLOBAL__I_a23() nounwind
 
 declare void @_GLOBAL__I_a() nounwind
 

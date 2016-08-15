@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Aug 14 20:10:12 2016
+# Process ID: 11640
+# Current directory: C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/sim/vhdl
+# Command line: wbtcv.exe -mode batch -source C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/sim/vhdl/xsim.dir/assign_intensity/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/sim/vhdl/webtalk.log
+# Journal file: C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/sim/vhdl\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/sim/vhdl/xsim.dir/assign_intensity/webtalk/xsim_webtalk.tcl -notrace

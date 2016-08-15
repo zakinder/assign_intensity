@@ -2436,9 +2436,9 @@ _ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:21  call vo
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="27" bw="0" op_0_bw="0">
+<node id="27" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:22  call void (...)* @_ssdm_op_SpecTopModule() nounwind
+_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:22  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @assign_intensity_str) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

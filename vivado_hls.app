@@ -1,8 +1,8 @@
 <project xmlns="com.autoesl.autopilot.project" name="assign_intensity" top="assign_intensity">
     <includePaths/>
     <libraryPaths/>
-    <Simulation>
-        <SimFlow name="csim" clean="true" csimMode="0" lastCsimMode="0"/>
+    <Simulation argv="">
+        <SimFlow name="csim" setup="true" clean="true" csimMode="2" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
         <file name="../testbench/assign_intensity_tb.cpp" sc="0" tb="1" cflags=" "/>

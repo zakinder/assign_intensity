@@ -1289,8 +1289,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>assign_intensity</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1608100200</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-08-10T06:00:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1608142007</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2016-08-15T00:07:46Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.2</xilinx:xilinxVersion>

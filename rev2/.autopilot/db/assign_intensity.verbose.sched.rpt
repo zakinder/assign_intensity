@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'assign_intensity'
 ================================================================
-* Date:           Wed Aug 10 01:59:08 2016
+* Date:           Sun Aug 14 20:05:43 2016
 
 * Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
 * Project:        assign_intensity
@@ -705,7 +705,7 @@ ST_40: stg_212 [1/1] 0.00ns
 _ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:21  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !27
 
 ST_40: stg_213 [1/1] 0.00ns
-_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:22  call void (...)* @_ssdm_op_SpecTopModule() nounwind
+_ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:22  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @assign_intensity_str) nounwind
 
 ST_40: p_Result_s [1/1] 0.00ns
 _ZlsILi48ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit_ifconv:69  %p_Result_s = call i24 @_ssdm_op_BitConcatenate.i24.i1.i23(i1 true, i23 %loc_V_1) nounwind

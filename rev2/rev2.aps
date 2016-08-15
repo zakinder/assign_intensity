@@ -7,13 +7,12 @@
     </clockList>
     <config>
         <schedule model="assign_intensity"/>
-        <config_array_partition auto_partition_threshold="4" auto_promotion_threshold="64" include_extern_globals="0" include_ports="0" scalarize_all="0" throughput_driven="1"/>
         <config_compile name_max_length="30" no_signed_zeros="0" pipeline_loops="0" unsafe_math_optimizations="0"/>
+        <config_array_partition auto_partition_threshold="4" auto_promotion_threshold="64" include_extern_globals="0" include_ports="0" scalarize_all="0" throughput_driven="1"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="true" showDetailDesignViewer="false">
             <Platform>xilinx/zynq/zynq</Platform>
-            <Platform>xilinx/zynq/zynq_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -42,15 +41,15 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="verilog">
-        <Format description="Assigns the pixel intensity to the nodemap area covered by the pixel" display_name="assign_intensity" formatName="ip_catalog" vendor="lynntech" library="" version="1.0" driver_input_dir="" taxonomy=""/>
+    <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="vhdl">
+        <Format description="Assigns the pixel intensity to the nodemap area covered by the pixel" display_name="assign_intensity" formatName="ip_catalog" vendor="lynntech"/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
     </ExportDesign>
-    <Simulation>
-        <SimFlow askAgain="true" compiledLibrary="C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/csim" dumpTrace="none" name="cosim" optimizeCompile="true" reduce_diskspace="false" setup="true" toolName="XSim">
+    <Simulation argv="">
+        <SimFlow askAgain="true" compiledLibrary="C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/rev2/csim" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="xsim" ldflags="" mflags="">
             <Rtl active="false" name="systemc"/>
             <Rtl active="false" name="verilog"/>
             <Rtl active="true" name="vhdl"/>
@@ -67,7 +66,7 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
-        <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
+        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
 </solution>
 

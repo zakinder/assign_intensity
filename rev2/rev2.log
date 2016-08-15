@@ -8,15 +8,23 @@ Copyright (C) 1986-2016 Xilinx, Inc. All Rights Reserved.
 @I [SYN-201] Setting up clock 'default' with a period of 6.66667ns.
 @I [SYN-201] Setting up clock 'default' with an uncertainty of 0.63ns.
 @I [HLS-10] Setting target device to 'xc7z045ffg900-2'
-@I [XFORM-102] Automatic array promotion enabled: cut-off elements per dimension is 64.
-@I [XFORM-102] Size-based automatic array partition enabled: cut-off elements per dimension is 4.
-@I [XFORM-102] Enabled automatic array partitioning for throughput optimization.
-@I [XFORM-102] Do not partition external global variables.
-@I [XFORM-102] Do not partition I/O variables.
 @I [XFORM-1171] Pipeline the innermost loop with trip count more than 0 or its parent loop when its trip count is less than or equal 0.
 @I [XFORM-1172] Optimizing floating point zeros and discarding its signedness.
 @I [XFORM-1172] Optimizing floating point zeros and discarding its signedness.
 @I [XFORM-1173] Reordering floating point operations aggressively.
 @I [XFORM-1176] Optimizing floating point comparison without checking NaN.
 @I [XFORM-1161] The maximum of name length is set into 30.
-@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [XFORM-102] Automatic array promotion enabled: cut-off elements per dimension is 64.
+@I [XFORM-102] Size-based automatic array partition enabled: cut-off elements per dimension is 4.
+@I [XFORM-102] Enabled automatic array partitioning for throughput optimization.
+@I [XFORM-102] Do not partition external global variables.
+@I [XFORM-102] Do not partition I/O variables.
+@I [COSIM-47] Using XSIM for RTL simulation.
+@I [COSIM-14] Instrumenting C test bench ...
+@I [COSIM-302] Starting C TB testing ... 
+@I [COSIM-333] Generating C post check test bench ...
+@I [COSIM-12] Generating RTL test bench ...
+@I [COSIM-322] Starting VHDL simulation. 
+@I [COSIM-15] Starting XSIM ...
+@I [COSIM-316] Starting C post checking ...
+@I [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'assign_intensity'" level="0">
-<item name = "Date">Wed Aug 10 01:59:09 2016
+<item name = "Date">Sun Aug 14 20:05:44 2016
 </item>
 <item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
 <item name = "Project">assign_intensity</item>
@@ -91,36 +91,36 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="cumsum_V_fu_515_p2">+, 0, 0, 34, 34, 34</column>
-<column name="grp_fu_443_p2">+, 0, 0, 32, 32, 32</column>
-<column name="grp_fu_449_p2">+, 0, 0, 16, 32, 32</column>
-<column name="grp_fu_472_p2">+, 0, 0, 16, 32, 32</column>
-<column name="j_1_1_fu_743_p2">+, 0, 0, 2, 1, 2</column>
-<column name="j_1_2_fu_813_p2">+, 0, 0, 2, 1, 2</column>
-<column name="j_1_3_fu_887_p2">+, 0, 0, 2, 1, 2</column>
-<column name="j_1_fu_669_p2">+, 0, 0, 2, 1, 2</column>
-<column name="sh_assign_fu_562_p2">+, 0, 0, 9, 8, 9</column>
-<column name="tmp9_fu_505_p2">+, 0, 0, 33, 33, 33</column>
-<column name="tmp_33_1_fu_768_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_33_2_fu_838_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_33_3_fu_912_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_35_1_fu_792_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_35_2_fu_862_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_35_3_fu_936_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_7_fu_694_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_9_fu_722_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_fu_489_p2">+, 0, 0, 33, 33, 33</column>
-<column name="tmp_4_i_i_i_fu_576_p2">-, 0, 0, 8, 7, 8</column>
-<column name="exitcond_1_fu_749_p2">icmp, 0, 0, 1, 2, 2</column>
-<column name="exitcond_2_fu_819_p2">icmp, 0, 0, 1, 2, 2</column>
-<column name="exitcond_3_fu_893_p2">icmp, 0, 0, 1, 2, 2</column>
-<column name="exitcond_fu_675_p2">icmp, 0, 0, 1, 2, 2</column>
-<column name="tmp_i_fu_521_p2">icmp, 0, 0, 12, 34, 1</column>
-<column name="tmp_7_i_i_i_fu_605_p2">lshr, 0, 0, 63, 24, 24</column>
-<column name="rec_V_fu_647_p3">select, 0, 0, 48, 1, 2</column>
-<column name="sh_assign_1_fu_585_p3">select, 0, 0, 9, 1, 9</column>
-<column name="tmp_14_fu_639_p3">select, 0, 0, 48, 1, 48</column>
-<column name="tmp_9_i_i_i_fu_611_p2">shl, 0, 0, 346, 110, 110</column>
+<column name="cumsum_V_fu_517_p2">+, 0, 0, 34, 34, 34</column>
+<column name="grp_fu_445_p2">+, 0, 0, 32, 32, 32</column>
+<column name="grp_fu_451_p2">+, 0, 0, 16, 32, 32</column>
+<column name="grp_fu_474_p2">+, 0, 0, 16, 32, 32</column>
+<column name="j_1_1_fu_745_p2">+, 0, 0, 2, 1, 2</column>
+<column name="j_1_2_fu_815_p2">+, 0, 0, 2, 1, 2</column>
+<column name="j_1_3_fu_889_p2">+, 0, 0, 2, 1, 2</column>
+<column name="j_1_fu_671_p2">+, 0, 0, 2, 1, 2</column>
+<column name="sh_assign_fu_564_p2">+, 0, 0, 9, 8, 9</column>
+<column name="tmp9_fu_507_p2">+, 0, 0, 33, 33, 33</column>
+<column name="tmp_33_1_fu_770_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_33_2_fu_840_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_33_3_fu_914_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_35_1_fu_794_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_35_2_fu_864_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_35_3_fu_938_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_7_fu_696_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_9_fu_724_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_fu_491_p2">+, 0, 0, 33, 33, 33</column>
+<column name="tmp_4_i_i_i_fu_578_p2">-, 0, 0, 8, 7, 8</column>
+<column name="exitcond_1_fu_751_p2">icmp, 0, 0, 1, 2, 2</column>
+<column name="exitcond_2_fu_821_p2">icmp, 0, 0, 1, 2, 2</column>
+<column name="exitcond_3_fu_895_p2">icmp, 0, 0, 1, 2, 2</column>
+<column name="exitcond_fu_677_p2">icmp, 0, 0, 1, 2, 2</column>
+<column name="tmp_i_fu_523_p2">icmp, 0, 0, 12, 34, 1</column>
+<column name="tmp_7_i_i_i_fu_607_p2">lshr, 0, 0, 63, 24, 24</column>
+<column name="rec_V_fu_649_p3">select, 0, 0, 48, 1, 2</column>
+<column name="sh_assign_1_fu_587_p3">select, 0, 0, 9, 1, 9</column>
+<column name="tmp_14_fu_641_p3">select, 0, 0, 48, 1, 48</column>
+<column name="tmp_9_i_i_i_fu_613_p2">shl, 0, 0, 346, 110, 110</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -136,29 +136,29 @@
 <column name="ap_reg_ppiten_pp2_it14">1, 2, 1, 2</column>
 <column name="ap_reg_ppiten_pp3_it1">1, 2, 1, 2</column>
 <column name="ap_reg_ppiten_pp3_it14">1, 2, 1, 2</column>
-<column name="j4_phi_fu_385_p4">2, 2, 2, 4</column>
-<column name="j4_reg_381">2, 2, 2, 4</column>
-<column name="j_2_phi_fu_418_p4">2, 2, 2, 4</column>
-<column name="j_2_reg_414">2, 2, 2, 4</column>
-<column name="j_3_phi_fu_396_p4">2, 2, 2, 4</column>
-<column name="j_3_reg_392">2, 2, 2, 4</column>
-<column name="j_s_phi_fu_407_p4">2, 2, 2, 4</column>
-<column name="j_s_reg_403">2, 2, 2, 4</column>
+<column name="j4_phi_fu_387_p4">2, 2, 2, 4</column>
+<column name="j4_reg_383">2, 2, 2, 4</column>
+<column name="j_2_phi_fu_420_p4">2, 2, 2, 4</column>
+<column name="j_2_reg_416">2, 2, 2, 4</column>
+<column name="j_3_phi_fu_398_p4">2, 2, 2, 4</column>
+<column name="j_3_reg_394">2, 2, 2, 4</column>
+<column name="j_s_phi_fu_409_p4">2, 2, 2, 4</column>
+<column name="j_s_reg_405">2, 2, 2, 4</column>
 <column name="node_count_address0">4, 5, 4, 20</column>
 <column name="node_count_address1">4, 5, 4, 20</column>
 <column name="node_count_d1">32, 5, 32, 160</column>
 <column name="node_output_address0">4, 5, 4, 20</column>
 <column name="node_output_address1">4, 5, 4, 20</column>
 <column name="node_output_d1">32, 5, 32, 160</column>
-<column name="reg_459">32, 2, 32, 64</column>
+<column name="reg_461">32, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="alpha_norm_V_1_reg_1182">48, 0, 48, 0</column>
-<column name="alpha_norm_V_2_reg_1233">48, 0, 48, 0</column>
-<column name="alpha_norm_V_3_reg_1284">48, 0, 48, 0</column>
-<column name="alpha_norm_V_reg_1123">48, 0, 48, 0</column>
+<column name="alpha_norm_V_1_reg_1184">48, 0, 48, 0</column>
+<column name="alpha_norm_V_2_reg_1235">48, 0, 48, 0</column>
+<column name="alpha_norm_V_3_reg_1286">48, 0, 48, 0</column>
+<column name="alpha_norm_V_reg_1125">48, 0, 48, 0</column>
 <column name="ap_CS_fsm">48, 0, 48, 0</column>
 <column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
@@ -220,60 +220,60 @@
 <column name="ap_reg_ppiten_pp3_it7">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp3_it8">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp3_it9">1, 0, 1, 0</column>
-<column name="cumsum_V_reg_1037">34, 0, 34, 0</column>
-<column name="exitcond_1_reg_1173">1, 0, 1, 0</column>
-<column name="exitcond_2_reg_1224">1, 0, 1, 0</column>
-<column name="exitcond_3_reg_1275">1, 0, 1, 0</column>
-<column name="exitcond_reg_1114">1, 0, 1, 0</column>
-<column name="j4_reg_381">2, 0, 2, 0</column>
-<column name="j_1_1_reg_1168">2, 0, 2, 0</column>
-<column name="j_1_2_reg_1219">2, 0, 2, 0</column>
-<column name="j_1_3_reg_1270">2, 0, 2, 0</column>
-<column name="j_1_reg_1109">2, 0, 2, 0</column>
-<column name="j_2_reg_414">2, 0, 2, 0</column>
-<column name="j_3_reg_392">2, 0, 2, 0</column>
-<column name="j_s_reg_403">2, 0, 2, 0</column>
-<column name="loc_V_1_reg_1074">23, 0, 23, 0</column>
-<column name="loc_V_reg_1068">8, 0, 8, 0</column>
-<column name="node_count_addr_1_reg_1162">2, 0, 4, 2</column>
-<column name="node_count_addr_2_reg_1213">2, 0, 4, 2</column>
-<column name="node_count_addr_3_reg_1264">2, 0, 4, 2</column>
-<column name="node_count_addr_reg_1103">2, 0, 4, 2</column>
-<column name="node_output_addr_1_reg_1156">2, 0, 4, 2</column>
-<column name="node_output_addr_2_reg_1207">2, 0, 4, 2</column>
-<column name="node_output_addr_3_reg_1258">2, 0, 4, 2</column>
-<column name="node_output_addr_reg_1097">2, 0, 4, 2</column>
-<column name="phitmp_1_reg_1197">32, 0, 32, 0</column>
-<column name="phitmp_2_reg_1248">32, 0, 32, 0</column>
-<column name="phitmp_3_reg_1299">32, 0, 32, 0</column>
-<column name="phitmp_reg_1146">32, 0, 32, 0</column>
-<column name="r_V_4_reg_1087">16, 0, 36, 20</column>
-<column name="rec_V_reg_1079">48, 0, 48, 0</column>
-<column name="reg_455">32, 0, 32, 0</column>
-<column name="reg_459">32, 0, 32, 0</column>
-<column name="reg_464">32, 0, 32, 0</column>
-<column name="reg_468">32, 0, 32, 0</column>
-<column name="reg_478">32, 0, 32, 0</column>
-<column name="rhs_V_cast_reg_1138">16, 0, 52, 36</column>
-<column name="tmp_19_reg_1128">32, 0, 32, 0</column>
-<column name="tmp_1_i_reg_1053">32, 0, 32, 0</column>
-<column name="tmp_20_reg_1187">32, 0, 32, 0</column>
-<column name="tmp_21_reg_1238">32, 0, 32, 0</column>
-<column name="tmp_22_reg_1289">32, 0, 32, 0</column>
-<column name="tmp_2_i_reg_1063">32, 0, 32, 0</column>
-<column name="tmp_i_8_reg_1058">32, 0, 32, 0</column>
-<column name="tmp_i_reg_1043">1, 0, 1, 0</column>
-<column name="tmp_reg_1032">33, 0, 33, 0</column>
-<column name="val_assign_1_reg_992">32, 0, 32, 0</column>
-<column name="val_assign_2_reg_1017">32, 0, 32, 0</column>
-<column name="node_count_addr_1_reg_1162">0, 2, 4, 2</column>
-<column name="node_count_addr_2_reg_1213">0, 2, 4, 2</column>
-<column name="node_count_addr_3_reg_1264">0, 2, 4, 2</column>
-<column name="node_count_addr_reg_1103">0, 2, 4, 2</column>
-<column name="node_output_addr_1_reg_1156">0, 2, 4, 2</column>
-<column name="node_output_addr_2_reg_1207">0, 2, 4, 2</column>
-<column name="node_output_addr_3_reg_1258">0, 2, 4, 2</column>
-<column name="node_output_addr_reg_1097">0, 2, 4, 2</column>
+<column name="cumsum_V_reg_1039">34, 0, 34, 0</column>
+<column name="exitcond_1_reg_1175">1, 0, 1, 0</column>
+<column name="exitcond_2_reg_1226">1, 0, 1, 0</column>
+<column name="exitcond_3_reg_1277">1, 0, 1, 0</column>
+<column name="exitcond_reg_1116">1, 0, 1, 0</column>
+<column name="j4_reg_383">2, 0, 2, 0</column>
+<column name="j_1_1_reg_1170">2, 0, 2, 0</column>
+<column name="j_1_2_reg_1221">2, 0, 2, 0</column>
+<column name="j_1_3_reg_1272">2, 0, 2, 0</column>
+<column name="j_1_reg_1111">2, 0, 2, 0</column>
+<column name="j_2_reg_416">2, 0, 2, 0</column>
+<column name="j_3_reg_394">2, 0, 2, 0</column>
+<column name="j_s_reg_405">2, 0, 2, 0</column>
+<column name="loc_V_1_reg_1076">23, 0, 23, 0</column>
+<column name="loc_V_reg_1070">8, 0, 8, 0</column>
+<column name="node_count_addr_1_reg_1164">2, 0, 4, 2</column>
+<column name="node_count_addr_2_reg_1215">2, 0, 4, 2</column>
+<column name="node_count_addr_3_reg_1266">2, 0, 4, 2</column>
+<column name="node_count_addr_reg_1105">2, 0, 4, 2</column>
+<column name="node_output_addr_1_reg_1158">2, 0, 4, 2</column>
+<column name="node_output_addr_2_reg_1209">2, 0, 4, 2</column>
+<column name="node_output_addr_3_reg_1260">2, 0, 4, 2</column>
+<column name="node_output_addr_reg_1099">2, 0, 4, 2</column>
+<column name="phitmp_1_reg_1199">32, 0, 32, 0</column>
+<column name="phitmp_2_reg_1250">32, 0, 32, 0</column>
+<column name="phitmp_3_reg_1301">32, 0, 32, 0</column>
+<column name="phitmp_reg_1148">32, 0, 32, 0</column>
+<column name="r_V_4_reg_1089">16, 0, 36, 20</column>
+<column name="rec_V_reg_1081">48, 0, 48, 0</column>
+<column name="reg_457">32, 0, 32, 0</column>
+<column name="reg_461">32, 0, 32, 0</column>
+<column name="reg_466">32, 0, 32, 0</column>
+<column name="reg_470">32, 0, 32, 0</column>
+<column name="reg_480">32, 0, 32, 0</column>
+<column name="rhs_V_cast_reg_1140">16, 0, 52, 36</column>
+<column name="tmp_19_reg_1130">32, 0, 32, 0</column>
+<column name="tmp_1_i_reg_1055">32, 0, 32, 0</column>
+<column name="tmp_20_reg_1189">32, 0, 32, 0</column>
+<column name="tmp_21_reg_1240">32, 0, 32, 0</column>
+<column name="tmp_22_reg_1291">32, 0, 32, 0</column>
+<column name="tmp_2_i_reg_1065">32, 0, 32, 0</column>
+<column name="tmp_i_8_reg_1060">32, 0, 32, 0</column>
+<column name="tmp_i_reg_1045">1, 0, 1, 0</column>
+<column name="tmp_reg_1034">33, 0, 33, 0</column>
+<column name="val_assign_1_reg_994">32, 0, 32, 0</column>
+<column name="val_assign_2_reg_1019">32, 0, 32, 0</column>
+<column name="node_count_addr_1_reg_1164">0, 2, 4, 2</column>
+<column name="node_count_addr_2_reg_1215">0, 2, 4, 2</column>
+<column name="node_count_addr_3_reg_1266">0, 2, 4, 2</column>
+<column name="node_count_addr_reg_1105">0, 2, 4, 2</column>
+<column name="node_output_addr_1_reg_1158">0, 2, 4, 2</column>
+<column name="node_output_addr_2_reg_1209">0, 2, 4, 2</column>
+<column name="node_output_addr_3_reg_1260">0, 2, 4, 2</column>
+<column name="node_output_addr_reg_1099">0, 2, 4, 2</column>
 </table>
 </item>
 </section>
@@ -319,9 +319,9 @@
 <item name = "Max Delay">5.79</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'alphabuf_load_2', assign_intensity/src/assign_intensity.cpp:97">load, 2.39, 2.39, -, -, -, -, -, -, &apos;alphabuf&apos;, -, -, -, -</column>
-<column name="'tmp2', assign_intensity/src/assign_intensity.cpp:97">add, 1.70, 4.09, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'val', assign_intensity/src/assign_intensity.cpp:97">add, 1.70, 5.79, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'alphabuf_load_2', assign_intensity/src/assign_intensity.cpp:37">load, 2.39, 2.39, -, -, -, -, -, -, &apos;alphabuf&apos;, -, -, -, -</column>
+<column name="'tmp2', assign_intensity/src/assign_intensity.cpp:37">add, 1.70, 4.09, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'val', assign_intensity/src/assign_intensity.cpp:37">add, 1.70, 5.79, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Aug 10 00:04:27 2016">
+<application name="pa" timeStamp="Wed Aug 10 22:06:22 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="152c84f3337344798f2860ff97e7d8fb" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -18,69 +18,48 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddExistingIPHandler" value="3" type="JavaHandler"/>
-<property name="CustomizeCore" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CustomizeCore" value="3" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
 <property name="EditProperties" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="1" type="JavaHandler"/>
 <property name="IPPackagerWizardHandler" value="1" type="JavaHandler"/>
 <property name="NewIPLocationHandler" value="1" type="JavaHandler"/>
-<property name="OpenIPLocationHandler" value="1" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="3" type="JavaHandler"/>
+<property name="OpenIPLocationHandler" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="4" type="JavaHandler"/>
 <property name="UpdateRegId" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="BACK,  Back" value="1" type="GuiResourceData"/>
-<property name="CANCEL, Cancel" value="2" type="GuiResourceData"/>
-<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
-<property name="NEXT, Next " value="9" type="GuiResourceData"/>
+<property name="General, General" value="1" type="GuiResourceData"/>
 <property name="OK, OK" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REFRESH_ALL_REPOSITORIES, Refresh All Repositories" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, AXI Peripheral ;  ;  ;  ; , 1" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, AXI Peripheral ;  ;  ;  ; , 1, AXI Peripheral, 0, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, AXI Peripheral ;  ;  ;  ; , 1, AXI Peripheral, 0, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Alliance Partners ;  ;  ;  ; , 6, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Automotive  Industrial ;  ;  ;  ; , 4, Automotive  Industrial, 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, BaseIP ;  ;  ;  ; , 4, BaseIP, 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, VIVADO HLS IP ;  ;  ;  ; , 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, VIVADO HLS IP ;  ;  ;  ; , 2, VIVADO HLS IP, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REFRESH_ALL_REPOSITORIES, Refresh All Repositories" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, VIVADO HLS IP ;  ;  ;  ; , 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Video  Image Processing ;  ;  ;  ; , 20, (String" value="1" type="GuiResourceData"/>
 <property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 2" value="1" type="GuiResourceData"/>
 <property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 2, assign_intensity, 0, false" value="2" type="GuiResourceData"/>
 <property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 2, assign_intensity, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_ADD_EXISTING_IP, Add Existing IP..." value="2" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_ADD_EXISTING_IP, Sources_add_existing_ip" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, Create and Package IP..." value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_IP_SETTINGS, IP Catalog_ip_settings" value="3" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_LICENSE_MANAGE, Manage License..." value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 2, assign_intensity, 0, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 3, assign_intensity, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, assign_intensity ;  ; Pre-Production ; Included ; lynntech:hls:assign_intensity:1.0, 3, assign_intensity, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, Edit in IP Packager" value="1" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_OPEN_IP_LOCATION, Open IP Location..." value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false" value="6" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_MANAGE_IP, Manage IP" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, New IP Location..." value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_DESIGN_HUBS, Design Hubs" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_HELP, Help" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIPProjectWizard_IP_LOCATION, C:/Users/sakin/Desktop/pj_r_0001/assign_intensity/ip_repo" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIPProjectWizard_IP_LOCATION, C:\Users\sakin\Desktop\pj_r_0001\assign_intensity\ip_repo" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIPProjectWizard_PART, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIPProjectWizard_SIMULATOR_LANGUAGE, VHDL, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIPProjectWizard_TARGET_LANGUAGE, VHDL, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 BFM simulation and debug demonstration design." value="2" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PartChooser_PARTS, xc7z045ffg900-1 ; 900 ; 545 ; 900 ; 437200 ; 0 ; 16 ; 362 ; 218600 ; 8 ; 1 ; 85 ; 0 ; 85 ; C ; 1.03 ; 0.97 ; 0.97 ; 16 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0, 2, xc7z045ffg900-1, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PartChooser_PARTS, xc7z045ffg900-2 ; 900 ; 545 ; 900 ; 437200 ; 0 ; 16 ; 362 ; 218600 ; 8 ; 1 ; 85 ; 0 ; 85 ; C ; 1.03 ; 0.97 ; 0.97 ; 16 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0, 1, xc7z045ffg900-2, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_GENERAL, General, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_PACKAGER, Packager, 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_REPOSITORY_MANAGER, Repository Manager, 1" value="2" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectSettingsIPRepositoryPanel_ADD_REPOSITORY, Add Repository" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_ADD_CONFIGURABLE_IP_FILES, Add Files" value="2" type="GuiResourceData"/>
-<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="1" type="GuiResourceData"/>
-<property name="RDIResource.AddRepositoryInfoDialog_OK, OK" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="4" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_PROPERTIES, Core Folder Properties..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, assign_intensity - behav (assign_intensity.vhd" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, flt_fma_special_detect - rtl (floating_point_v7_1_vh_rfs.vhd" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Project Settings], 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_MANAGE_IP, Manage IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MessageBanner_SEE_LIST_OF_CRITICAL_WARNING_MESSAGES, 2 critical warnings" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.OpenFileAction_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, File Groups, 2" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="Simulation, Simulation" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="GuiMode" value="3" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="TclMode" value="2" type="TclMode"/>
 </item>
 </section>
 </application>

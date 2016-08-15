@@ -1,9 +1,9 @@
 set C_TypeInfoList {{ 
 "assign_intensity" : [[], {"return": [[], {"scalar": "int"}] }, [{"ExternC" : 0}], [ {"alphabuf": [[], {"array": [ {"array": ["0", [4]]}, [4]]}] }, {"intensity": [[],"1"] }, {"node_output": [[], {"array": [ {"array": ["2", [4]]}, [4]]}] }, {"node_count": [[], {"array": [ {"array": ["3", [4]]}, [4]]}] }],[],""], 
-"0": [ "uint_lut_t", {"typedef": [[[], {"scalar": "unsigned int"}],""]}], 
 "1": [ "pixel_value_t", {"typedef": [[[], {"scalar": "unsigned short"}],""]}], 
+"2": [ "nodemap_accum_t", {"typedef": [[[], {"scalar": "unsigned int"}],""]}], 
 "3": [ "nodemap_count_t", {"typedef": [[[], {"scalar": "unsigned int"}],""]}], 
-"2": [ "nodemap_accum_t", {"typedef": [[[], {"scalar": "unsigned int"}],""]}]
+"0": [ "uint_lut_t", {"typedef": [[[], {"scalar": "unsigned int"}],""]}]
 }}
 set moduleName assign_intensity
 set isCombinational 0

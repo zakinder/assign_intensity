@@ -1,0 +1,4 @@
+
+call xelab xil_defaultlib.apatb_assign_intensity_top -prj assign_intensity.prj --initfile "C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s assign_intensity -debug wave
+call xsim --noieeewarnings assign_intensity -tclbatch assign_intensity.tcl
+
